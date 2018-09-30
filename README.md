@@ -23,7 +23,7 @@ Por último colocas este script para que funcione el smooth scroll
 <script src="./src/smooth-scroll.js"></script>
 <script>
    new Smoothscroll({
-      duration: 500, // 200 is default
+      duration: 2000, // 1000 is default
       offsettop: '.navbar', // 0 is default
       easing: 'easeInOutQuad' // linear is default
    })
