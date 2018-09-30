@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Smooth Scroll</div>
+    <ul class="navbar-menu">
+        <li class="navbar-menu__item"><a data-smooth-scroll href="#section-1">Section 1</a></li>
+        <li class="navbar-menu__item"><a data-smooth-scroll href="#section-2">Section 2</a></li>
+        <li class="navbar-menu__item"><a data-smooth-scroll href="#section-3">Section 3</a></li>
+    </ul>
+</nav>
+<section id="section-1">Section 1</section>
+<section id="section-2">Section 2</section>
+<section id="section-3">Section 3</section>
+</body>
+<script src="./src/smooth-scroll.js"></script>
+<script>
+	new Smoothscroll({
+	  duration: 5000, // 1000 is default
+	  offsettop: ".navbar", // 0 is default
+	  easing: "easeInOutQuint" // linear is default
+	});
+</script>
+</html>

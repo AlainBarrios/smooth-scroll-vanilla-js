@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+
+:root{
+    --black: #000;
+    --aquamarine: aquamarine;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kosugi', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    padding: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    background-color: var(--aquamarine);
+    padding: 15px;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.navbar-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 3rem;
+    justify-content: start;
+}
+
+.navbar-menu__item{
+    text-transform: uppercase;
+}
